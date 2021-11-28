@@ -28,14 +28,105 @@ var questionArray = [
 	{
 		question: "What does CSS stand for?",
 
-		choice1: "",
+		choice1: "Cascading Sheet Style",
 
-		choice2: "",
+		choice2: "College Social Service",
 
-		choice3: "",
+		choice3: "Creative Styling Sheets",
 
-		choice4: "",
+		choice4: "Cascading Style Sheets",
 
-		answer: "",
+		answer: "Cascading Style Sheets",
 	},
+	{
+		question: "Which of these is not a flex-container property?",
+        
+		choice1: "align-items",
+        
+		choice2: "align-content",
+        
+		choice3: "text-align",
+        
+		choice4: "flex-wrap",
+        
+		answer: "text-align",
+	},
+	{
+		question: "Which method combines two strings and returns a new string?",
+        
+		choice1: "append()",
+        
+		choice2: "attach()",
+        
+		choice3: "join()",
+        
+		choice4: "concat()",
+        
+		answer: "concat()",
+	},
+	{
+		question: "From inside to outside, the correct order is:",
+        
+		choice1: "content, margin, border, padding",
+        
+		choice2: "margin, padding, border, content",
+        
+		choice3: "content, padding, border, margin",
+        
+		choice4: "content, padding, margin, border",
+        
+		answer: "content, padding, border, margin",
+	},
+	{
+		question: "Which of these is not a flex-container property?",
+        
+		choice1: "align-items",
+        
+		choice2: "align-content",
+        
+		choice3: "text-align",
+        
+		choice4: "flex-wrap",
+        
+		answer: "text-align",
+	},
+	{
+		question: "Which of these is not a falsy value",
+		
+		choice1: "0",
+        
+		choice2: "-0",
+        
+		choice3: "null",
+        
+		choice4: "none",
+        
+		answer: "none",
+	},
+	{
+		question: "Which of these is not a truthy value",
+        
+		choice1: "1",
+        
+		choice2: "false",
+        
+		choice3: "none",
+        
+		choice4: "NaN",
+        
+		answer: "NaN",
+	},
+	{
+		question: "Math.random() will generate a random __ within __",
+
+        choice1: "integer, 1-10",
+        
+		choice2: "decimal, 0-1",
+        
+		choice3: "fraction, 0-1",
+        
+		choice4: "bug, your code",
+        
+		answer: "decimal, 0-1",
+	}
 ]
