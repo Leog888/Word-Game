@@ -167,7 +167,13 @@ function startGame () {
 	}
 
 	newQuestions ();
-	
+
+	function checkFinish() {
+		if (questionPool.length == 0 || remainTime == 0) {
+			localStorage.setItem("recentStorage", score)
+			return window.location.assign("form.html")
+		}
+	}
 }
 
 
