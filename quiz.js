@@ -130,3 +130,28 @@ var questionArray = [
 		answer: "decimal, 0-1",
 	}
 ]
+// function to start game
+function startGame () {
+	// Sets pool to choose from -- 
+	var questionPool = questionArray
+
+	// Setting inital score 
+	var score = 0 
+	scoreText.innerText = "Score: " + score
+
+	// Set timer 
+	var indexQ = 0
+	var remainTime = 60 
+
+	function timer () {
+		setInterval(function () {
+			if(remainTime > 0){
+				remainTime.innerText = "Time Left: " + remainTime + ".s"
+			}
+			else {
+				checkFinish ()
+			} 
+		}, 1000)
+	}
+
+}
