@@ -153,5 +153,21 @@ function startGame () {
 			} 
 		}, 1000)
 	}
+	timer () 
+	function newQuestions () {
+	
+		indexQ = math.floor(math.random() * questionPool.length);
+		console.log("indexQ is" + indexQ);
+		console.log("pool length is " + questionPool.length);
+		questionText.innerText = JSON.stringify(questionPool[indexQ].question);
+		choiceText1.innerText = JSON.stringify(questionPool[indexQ].choice1)
+		choiceText2.innerText = JSON.stringify(questionPool[indexQ].choice2)
+		choiceText3.innerText = JSON.stringify(questionPool[indexQ].choice3)
+		choiceText4.innerText = JSON.stringify(questionPool[indexQ].choice4)
+	}
 
+	newQuestions ();
+	
 }
+
+
