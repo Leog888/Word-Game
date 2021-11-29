@@ -174,6 +174,48 @@ function startGame () {
 			return window.location.assign("form.html")
 		}
 	}
-}
 
+	// function for answers
+	function checkAnswer (input) {
+		console.log(questionPool[indexQ].answer)
+
+        if (input==JSON.stringify(questionPool[indexQ].answer)){
+
+            score = score + 10
+            console.log("hh")
+            resultText.innerText = "Correct"
+            resultText.style.visibility="visible"
+            scoreText.innerText = "Score: "+score
+            // console.log(questionPool.splice(indexQ, 0))
+            // New question pool to avoid repetition
+            questionPool.splice(indexQ, 1)
+            console.log(questionPool)
+            setTimeout(function(){resultText.style.visibility="hidden"}, 2500)
+            checkFinish()
+            newQuestion()
+	}
+	else {
+		score = score + 0
+		console.log("gg")
+		resultText.innerText = "Wrong"
+		resultText.style.visibility="visible"
+		scoreText.innerText = "Score: "+score
+		// console.log(questionPool.splice(indexQ, 0))
+		questionPool.splice(indexQ, 1)
+		console.log(questionPool)
+		setTimeout(function(){resultText.style.visibility="hidden"}, 2500)
+		checkFinish()
+		newQuestion()
+
+	}
+}
+//  Eventlistners for option buttons
+choiceEvent1.addEventListener("click", function(){checkAnswer(choiceText1.innerText)})
+choiceEvent2.addEventListener("click", function(){checkAnswer(choiceText2.innerText)})
+choiceEvent3.addEventListener("click", function(){checkAnswer(choiceText3.innerText)})
+choiceEvent4.addEventListener("click", function(){checkAnswer(choiceText4.innerText)})
+
+}
+// Start Game!!
+startGame();
 
