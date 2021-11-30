@@ -4,7 +4,7 @@ a:link{
 
 main{
     height: 100vh;
-    background-color: burlywood;
+    background-color: rgb(170, 169, 167);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,7 +55,7 @@ button{
     width:200px;
     text-align: center;
     border-radius: 20%;
-    background-color: coral;
+    background-color: rgb(236, 101, 101);
 
 }
 
@@ -71,7 +71,7 @@ a{
     text-align: center;
     font-size: 150%;
     border-radius: 20%;
-    background-color: cornflowerblue;
+    background-color: rgb(130, 170, 245);
     padding:20px;
     margin-left: 20px;
 }

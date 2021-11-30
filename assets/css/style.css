@@ -1,41 +1,142 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+*{
+
+  font-family: monospace;
+}
+
+a:link{
+  text-decoration: none;
+  /* background-color: cornsilk; */
+
+}
+
+a:hover{
+  font-size: 210%;
+  text-shadow: 5px 5px 10px rgb(0, 0, 0), -5px -5px 10px cornsilk;
+  transition: 1s;
+}
+
+header{
+  width: 100vw;
+  height: 20vh;
+  background-color: rgb(110, 79, 33);
+  display: flex;
+  position: relative;
+  align-items: center;
+
+
+}
+
+header a{
+  float: left;
+  padding-left: 10vh;
+  font-size: 200%;
+}
+
+#timer{
+  font-size: 200%;
+  position: absolute;
+  right:10%;
   
-  html {
-    height: 100%;
-  }
+
+}
+
+.container{
+  background-color: rgb(168, 23, 4);
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main{
+  background-color: burlywood;
+  height: 80vh;
+  display: flex;
+}
+
+
+
+main h1{
+  display: inline-block;
+  width: 100%;
+  font-size: 300%;
+  text-align: center;
+
+}
+
+main h3{
+  display: inline-block;
+  font-size: 150%;
+  text-align: center;
+  width: 100%;
+  line-height: 150%;
+}
+
+main a{
+  display: inline-block;
+  font-size: 200%;
   
-  body {
-    min-height: 100%;
-    line-height: 1;
-    font-family: sans-serif;
+}
+
+main article{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+
+  font-size: 200%;
+}
+
+#question{
+  margin-bottom: 20px;
+
+}
+
+main section{
+  display: flex;
+  min-width: 600px;
+  flex-wrap: wrap;
+  height: 50%;
+
+
+}
+.choice-container{
+  display: flex;
+  width: 100%;
+  text-align: center;
+  border: solid rgb(235, 241, 238) 5px;
+  margin-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10%;
+  height: 20%;
+  align-items: center;
+  font-size: 150%;
+
+}
+
+.choice-container:hover{
+  border-radius: 20%;
+  box-shadow: 5px 5px 10px black, -5px -5px 10px black;
+  transition: 0.2s;
+}
+
+h4{
+  float: left;
+  margin-left:5%;
+}
+
+aside {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 200%;
+
+}
+
+@media screen and (max-width: 900px){
+  main section { min-width: 300px;
+
   }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 100%;
-  }
-  
-  input,
-  select,
-  option,
-  optgroup,
-  textarea,
-  button,
-  pre,
-  code {
-    font-size: 100%;
-    font-family: inherit;
-  }
-  
-  ol,
-  ul {
-    list-style: none;
-  }
+
+}
