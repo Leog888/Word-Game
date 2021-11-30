@@ -8,6 +8,8 @@ var choiceEvent1 = document.getElementById("choice-container1"); // have a conta
 var choiceEvent2 = document.getElementById("choice-container2");
 var choiceEvent3 = document.getElementById("choice-container3");
 var choiceEvent4 = document.getElementById("choice-container4");
+var resultText = document.getElementById("result");
+var timeText = document.getElementById("timer");
 
 // create quiz questions here: 
 var questionArray = [
@@ -182,12 +184,9 @@ function startGame () {
         if (input==JSON.stringify(questionPool[indexQ].answer)){
 
             score = score + 10
-            console.log("hh")
             resultText.innerText = "Correct"
             resultText.style.visibility="visible"
-            scoreText.innerText = "Score: "+score
-            // console.log(questionPool.splice(indexQ, 0))
-            // New question pool to avoid repetition
+            scoreText.innerText = "Score: "+ score
             questionPool.splice(indexQ, 1)
             console.log(questionPool)
             setTimeout(function(){resultText.style.visibility="hidden"}, 2500)

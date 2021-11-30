@@ -20,7 +20,7 @@ function saveScore(){
 
     highscore.push(score);
 
-    highscore.sort(function compareScore (a, b){
+    highscore.sort(function compare (a, b){
         return b.score - a.score
     })
 
